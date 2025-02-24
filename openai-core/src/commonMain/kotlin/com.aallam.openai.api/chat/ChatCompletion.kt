@@ -1,5 +1,6 @@
 package com.aallam.openai.api.chat
 
+import com.aallam.openai.api.core.BotUsage
 import com.aallam.openai.api.core.Usage
 import com.aallam.openai.api.model.ModelId
 import kotlinx.serialization.SerialName
@@ -35,6 +36,8 @@ public data class ChatCompletion(
      * Text completion usage data.
      */
     @SerialName("usage") public val usage: Usage? = null,
+
+    @SerialName("bot_usage") public val botUsage: BotUsage? = null,
 
     /**
      * This fingerprint represents the backend configuration that the model runs with.
