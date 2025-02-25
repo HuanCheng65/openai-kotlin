@@ -37,6 +37,9 @@ public data class ChatCompletion(
      */
     @SerialName("usage") public val usage: Usage? = null,
 
+    /**
+     * Bot usage data for ByteDance volcengine bot.
+     */
     @SerialName("bot_usage") public val botUsage: BotUsage? = null,
 
     /**
