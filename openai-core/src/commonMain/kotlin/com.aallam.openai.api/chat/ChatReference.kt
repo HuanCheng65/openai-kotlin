@@ -35,6 +35,6 @@ public data class ChatReferenceExtra(
     @SerialName("auth_info")
     val authInfo: String,
 
-    @SerialName("final_rel")
+    @SerialName("final_ref")
     val finalRef: String,
 )
