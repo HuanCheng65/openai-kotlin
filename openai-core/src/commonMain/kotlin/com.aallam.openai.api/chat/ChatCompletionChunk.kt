@@ -54,4 +54,10 @@ public data class ChatCompletionChunk(
      */
     @SerialName("system_fingerprint")
     public val systemFingerprint: String? = null,
+
+    /**
+     * The references used, only available on ByteDance volcengine bot.
+     */
+    @SerialName("references")
+    public val references: List<ChatReference>? = null
 )
